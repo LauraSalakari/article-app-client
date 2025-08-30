@@ -23,4 +23,33 @@
 .home-button {
     cursor: pointer;
     padding: 20px;
+    user-select: none;
+}
+
+.article-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.article-choice {
+    padding: 20px 28px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.next-button {
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.current-word {
+    font-size: 2em;
+    padding-bottom: 28px;
 }
