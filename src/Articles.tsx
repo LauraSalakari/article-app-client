@@ -3,7 +3,7 @@ import './App.css'
 import HomeButton from './HomeButton'
 import wordlist from './wordlist.json'
 
-interface Word {
+export interface Word {
     id: number
     english: string
     german: string
@@ -14,8 +14,8 @@ interface Props {
     returnHome: () => void
 }
 
-let correctStyle = { backgroundColor: '#299b3850' }
-let wrongStyle = { backgroundColor: '#ee656e50' }
+export const correctStyle = { backgroundColor: '#299b3850' }
+export const wrongStyle = { backgroundColor: '#ee656e50' }
 
 function Articles(props: Props) {
     const [curItem, setCurItem] = useState<Word>()

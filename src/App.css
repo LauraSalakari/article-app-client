@@ -53,3 +53,11 @@
     font-size: 2em;
     padding-bottom: 28px;
 }
+
+.plural-entry-section {
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
