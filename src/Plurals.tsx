@@ -74,16 +74,23 @@ function Plurals(props: Props) {
             <div className='home-button-container' onClick={props.returnHome}>
                 <HomeButton />
             </div>
-            <div className={'current-word'}>{word}</div>
-            <div className='plural-entry-section'>
-                <span>Die </span>
-                <form onSubmit={(e) => onSubmitted(e)}>
-                    <input value={enteredAnswer} onChange={(e) => setEnteredAnswer(e.target.value)} ref={inputRef} />
-                </form>
-                <div className='check-div'>{getCheck()}</div>
-            </div>
-            <div className='next-button' onClick={() => selectWord(wordlist)}>
-                Next
+            <div className='test-zone '>
+                <div className={'current-word'}>{word}</div>
+                <div className='plural-entry-section'>
+                    <span>Die </span>
+                    <form onSubmit={(e) => onSubmitted(e)}>
+                        <input
+                            className='text-input'
+                            value={enteredAnswer}
+                            onChange={(e) => setEnteredAnswer(e.target.value)}
+                            ref={inputRef}
+                        />
+                    </form>
+                    <div className='check-div'>{getCheck()}</div>
+                </div>
+                <div className='next-button' onClick={() => selectWord(wordlist)}>
+                    Next
+                </div>
             </div>
         </>
     )

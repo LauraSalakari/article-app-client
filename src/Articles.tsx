@@ -70,23 +70,24 @@ function Articles(props: Props) {
             <div className='home-button-container' onClick={props.returnHome}>
                 <HomeButton />
             </div>
+            <div className="test-zone">
+                <div className={'current-word'}>{word}</div>
 
-            <div className={'current-word'}>{word}</div>
+                <div className='article-group'>
+                    <div className='article-choice' onClick={() => setSelectedAnswer('der')} style={getStyle('der')}>
+                        Der
+                    </div>
+                    <div className='article-choice' onClick={() => setSelectedAnswer('die')} style={getStyle('die')}>
+                        Die
+                    </div>
+                    <div className='article-choice' onClick={() => setSelectedAnswer('das')} style={getStyle('das')}>
+                        Das
+                    </div>
+                </div>
 
-            <div className='article-group'>
-                <div className='article-choice' onClick={() => setSelectedAnswer('der')} style={getStyle('der')}>
-                    Der
+                <div className='next-button' onClick={() => selectWord(wordlist)}>
+                    Next
                 </div>
-                <div className='article-choice' onClick={() => setSelectedAnswer('die')} style={getStyle('die')}>
-                    Die
-                </div>
-                <div className='article-choice' onClick={() => setSelectedAnswer('das')} style={getStyle('das')}>
-                    Das
-                </div>
-            </div>
-
-            <div className='next-button' onClick={() => selectWord(wordlist)}>
-                Next
             </div>
         </>
     )

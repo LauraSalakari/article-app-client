@@ -5,19 +5,40 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    background-image: url('./bg.png');
+    background-size: cover;
 }
 
 .mode-select-button {
     padding: 50px;
-    outline: 1px solid blue;
-    border-radius: 4px;
     cursor: pointer;
+    color: #0e1116;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .home-button-container {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.test-zone {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0e1116;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .home-button {
@@ -60,4 +81,20 @@
     flex-direction: row;
     gap: 12px;
     align-items: center;
+}
+
+.text-input {
+    background: transparent;
+    height: 24px;
+    border-radius: 4px;
+    padding-left: 4px;
+    border: 1px solid #0e1116;
+}
+
+.check-div {
+    width: 20px;
+}
+
+input:focus {
+    outline: none;
 }
